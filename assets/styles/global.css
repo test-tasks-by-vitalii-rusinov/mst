@@ -1,0 +1,17 @@
+:root {
+  --header-height: 60px;
+
+  --primary-background-color: #222222;
+  --secondary-background-color: #272727;
+
+  --primary-font: Georgia, "Times New Roman", serif;
+  --secondary-font: Arial, sans-serif;
+}
+
+body {
+  font-family: var(--primary-font);
+  font-size: 16px;
+  background-color: var(--primary-background-color);
+
+  color: #ffffff;
+}
