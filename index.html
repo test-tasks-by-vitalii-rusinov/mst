@@ -11,18 +11,18 @@
 <body>
     <header>
       <div class="logo">
-        <a href="#">PokeMart</a>
+        <a href="#greeting">PokeMart</a>
       </div>      
-      <nav class="top-menu">
-        <ul class='top-menu_list'>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
+      <nav class="menu top-menu">
+        <ul class='menu_list'>
+            <li><a href="#greeting">Greeting</a></li>
+            <li><a href="#advantages">Advantages</a></li>
+            <li><a href="#order">Order</a></li>
         </ul>
       </nav>    
     </header>
     <main>
-      <section class="greeting">
+      <section class="greeting" id="greeting">
         <div class="greeting_main">
           <h1>Rise as a Champion!</h1>
           <p>What makes a great trainer?</p>
@@ -43,13 +43,13 @@
               legit catches
             </li>
           </ul>
-          <button class="button greeting-button">ORDER</button>
+          <button class="button greeting-button toOrder">ORDER</button>
         </div>
         <div class="greeting_img">
           <img src="assets/pictures/greeting.jpeg" alt="">
         </div>
       </section>
-      <section class="advantages">
+      <section class="advantages" id="advantages">
         <img src="assets/pictures/advantages.jpeg" alt="pokemon_advantages">
         <div class="advantages_list">
           <ul>
@@ -70,12 +70,70 @@
               Collect the rarest Pokémon and become a legend among trainers
             </li>
           </ul>
-          <button class="button advantages-button">ORDER</button>
+          <button class="button advantages-button toOrder">ORDER</button>
         </div>
         <img src="assets/pictures/advantages2.jpeg" alt="pokemon_advantages">
       </section>
+      <section class="order-form" id="order">
+        <div class="order-form_container">
+          <form id="order-form_form">
+            <p>Pokemon orders</p>
+            <input type="text" id="name" name="name" placeholder="Name" required >
+            <input type="email" id="email" name="email" placeholder="E-mail" required>
+            <div class="checkbox">
+              <input type="checkbox" id="agreement" name="agreement">
+              <span for="agreement">I accept Privacy policy</span>
+            </div>
+            <button class="button order-form_button" type="submit" id="submitBtn" disabled>Submit Form</button>
+          </form>
+          <div class="order-form_img">
+            <img src="assets/pictures/order-form_img.jpeg" alt="order-form_img">
+          </div>
+        </div>
+      </section>
     </main>
-    <footer></footer>
+    <footer>
+      <nav class="menu bottom-menu">
+        <ul class='menu_list'>
+            <li><a href="#greeting">Greeting</a></li>
+            <li><a href="#advantages">Advantages</a></li>
+            <li><a href="#order">Order</a></li>
+        </ul>
+      </nav>  
+      <div class="footer">
+        <div class="logo">
+          <a href="#greeting">PokeMart</a>
+          <span>2024 copyright</span>
+        </div>
+        <div class="social_media">
+          <div class="icons">
+            <a href="">
+              <object type="image/svg+xml" data="assets/icons/instagram.svg" class="social-media-icon" alt="instagram"></object>
+            </a>
+            <a href="">
+              <object type="image/svg+xml" data="assets/icons/tiktok.svg" class="social-media-icon" alt="tiktok"></object>
+            </a>
+            <a href="">
+              <object type="image/svg+xml" data="assets/icons/linkedin.svg" class="social-media-icon" alt="linkedin"></object>
+            </a>
+            <a href="">
+              <object type="image/svg+xml" data="assets/icons/facebook.svg" class="social-media-icon" alt="facebook"></object>
+            </a>
+            <a href="">
+              <object type="image/svg+xml" data="assets/icons/telegram.svg" class="social-media-icon" alt="telegram"></object>
+            </a>
+            <a href="">
+              <object type="image/svg+xml" data="assets/icons/youtube.svg" class="social-media-icon" alt="youtube"></object>
+            </a>
+          </div>
+          <div class="privacy_policy">Privacy policy</div>
+        </div>
+        <div class="footer-order">
+          <button class="button footer-order-button toOrder">ORDER</button>
+          <a href="#">Terms of Us</a>
+        </div>
+      </div>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>

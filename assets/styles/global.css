@@ -3,10 +3,27 @@
 
   --primary-background-color: #222222;
   --secondary-background-color: #272727;
-  --grey-color: #d5c9be;
+  --white-background-color: #ffffff;
+
+  --gray-color: #d5c9be;
+  --gray-text: #516971;
+
+  --a-hover-color: #ffcc00;
+  --a-active-color: #e6b800;
+
+  --button-hover-background-color: #f0f0f0;
+  --button-active-background-color: #e0e0e0;
+
+  --submit-button-hover-background-color: #444444;;
+  --submit-button-active-background-color: #333333;
+
 
   --primary-font: Georgia, "Times New Roman", serif;
   --secondary-font: Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
