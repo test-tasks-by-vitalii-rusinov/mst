@@ -13,6 +13,18 @@ body {
   padding-top: var(--header-height);
 }
 
+section {
+  margin-top: 5vh;
+}
+
+.button{
+  min-height: max-content;
+  width: max-content;
+  padding: 1em;
+  background: #fff;
+  border-radius: 4px;
+}
+
 /*<--------------- начало header ---------------->*/
 header {
   width: 100%;
@@ -57,6 +69,7 @@ header.scrolled {
   display: flex;
   justify-content: center;
   gap: 3vw;
+
 }
 
 .top-menu_list li{
@@ -97,25 +110,51 @@ header.scrolled {
   gap: 1vw;
 }
 
+.greeting_main ul li span {
+  font-size: 1.2em;
+}
+
 .checkmark-icon {
   height: 1em;
-}
-
-.checkmark-icon path {
-  fill: #3498db;
-  stroke: #0f8b2a;
-  stroke-width: 2;
-}
-
-.greeting_main button{
-  min-height: max-content;
-  width: max-content;
-  padding: 1em;
-  background: #fff;
-  border-radius: 5px;
 }
 
 .greeting_img {
   display: none;
 }
 /*<--------------- конец greeting ---------------->*/
+/*<--------------- начало advantages ---------------->*/
+
+.advantages {
+  width: 100%;
+  background-color: var(--secondary-background-color);
+}
+
+.advantages img {
+  width: 100%;
+}
+
+.advantages_list {
+  height: max-content;
+  padding: 3vh 3vw;
+}
+
+.advantages_list ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.advantages_list ul li {
+  display: flex;
+  padding: 1em;
+  gap: 3vw;
+  border-bottom: 1px solid var(--grey-color);
+}
+.pokeball-icon {
+  height: 2em;
+}
+
+.advantages-button {
+  margin-top: 3vh;
+  min-width: 100%;
+}
+/*<--------------- конец advantages ---------------->*/
