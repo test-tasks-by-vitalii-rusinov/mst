@@ -24,6 +24,19 @@
 
 html {
   scroll-behavior: smooth;
+
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scrollbar-width: none;
+}
+
+html {
+  -ms-overflow-style: none;
 }
 
 body {
