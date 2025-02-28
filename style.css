@@ -212,6 +212,7 @@ header.scrolled {
     padding-top: 3em;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
   }
 
   .advantages_list {
@@ -230,6 +231,7 @@ header.scrolled {
   border-radius: 16px;
   display: grid;
   overflow: hidden;
+  align-items: center;
 }
 
 .order-form_container p {
